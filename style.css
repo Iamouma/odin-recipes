@@ -1,46 +1,52 @@
-/* General page styling */
+/* ====== Global Styles ====== */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   background-color: #fafafa;
   color: #333;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   line-height: 1.6;
 }
 
-/* Center and style main title */
-h1 {
+/* ====== Header ====== */
+header {
+  background-color: #4CAF50;
+  color: white;
   text-align: center;
-  color: #4CAF50;
+  padding: 20px 0;
 }
 
-/* Subheadings */
-h2 {
-  color: #333;
-  border-bottom: 2px solid #4CAF50;
-  padding-bottom: 5px;
-  margin-top: 20px;
+header h1 {
+  margin: 0;
+  font-size: 2em;
 }
 
-/* Navigation link back to home */
-a {
-  color: #4CAF50;
-  text-decoration: none;
+/* ====== Footer ====== */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  font-size: 0.9em;
 }
 
-a:hover {
-  text-decoration: underline;
+/* ====== Main content ====== */
+main {
+  padding: 20px;
 }
 
-/* Image styling */
-img {
-  display: block;
-  margin: 15px auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+/* ====== Container for recipes ====== */
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-/* Recipe list on index page */
+/* ====== Recipe list on index page ====== */
 ul {
   list-style: none;
   padding: 0;
@@ -51,7 +57,7 @@ ul {
 li {
   background: #e8f5e9;
   margin: 10px 0;
-  padding: 10px;
+  padding: 12px;
   border-radius: 6px;
   text-align: center;
   transition: background 0.3s;
@@ -61,12 +67,55 @@ li:hover {
   background: #c8e6c9;
 }
 
-/* Container for each recipe page */
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ====== Image styling ====== */
+img {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ====== Subheadings ====== */
+h2, h3 {
+  color: #333;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+  margin-top: 20px;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.6em;
+  }
+
+  .container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  ul {
+    width: 90%;
+  }
+
+  li {
+    font-size: 1em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
 }
