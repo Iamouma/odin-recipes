@@ -13,12 +13,77 @@ header {
   background-color: #4CAF50;
   color: white;
   text-align: center;
-  padding: 20px 0;
+  padding: 15px 0 0 0;
 }
 
 header h1 {
   margin: 0;
   font-size: 2em;
+}
+
+/* ====== Navigation Bar ====== */
+nav {
+  background-color: #43a047;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  position: relative;
+}
+
+.nav-links a {
+  text-decoration: none;
+  display: block;
+  padding: 12px 18px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  background-color: #388e3c;
+}
+
+/* ====== Dropdown Menu ====== */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #66bb6a;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  text-align: left;
+}
+
+.dropdown-content a {
+  padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* ====== Main content ====== */
+main {
+  padding: 20px;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
 /* ====== Footer ====== */
@@ -31,22 +96,7 @@ footer {
   font-size: 0.9em;
 }
 
-/* ====== Main content ====== */
-main {
-  padding: 20px;
-}
-
-/* ====== Container for recipes ====== */
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-/* ====== Recipe list on index page ====== */
+/* ====== Lists ====== */
 ul {
   list-style: none;
   padding: 0;
@@ -97,9 +147,26 @@ h2, h3 {
 }
 
 /* ====== Responsive Design ====== */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   header h1 {
     font-size: 1.6em;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links a {
+    padding: 10px;
+  }
+
+  .dropdown-content {
+    position: static;
+    box-shadow: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 
   .container {
@@ -109,10 +176,6 @@ h2, h3 {
 
   ul {
     width: 90%;
-  }
-
-  li {
-    font-size: 1em;
   }
 
   footer {
