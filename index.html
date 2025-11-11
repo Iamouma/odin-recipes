@@ -8,32 +8,59 @@
     </head>
     <body>
         <header>
-            <h1>Odin Recipes</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="dropdown">
-                    <a href="#">Recipes ▼</a>
-                    <ul class="dropdown-content">
-                        <li><a href="recipes/lasagna.html">Lasagna</a></li>
-                        <li><a href="recipes/pancakes.html">Pancakes</a></li>
-                        <li><a href="recipes/salad.html">Caesar Salad</a></li>
+            <div class="header-container">
+                <h1>🍴 Odin Recipes</h1>
+                <nav>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                        <a href="#">Recipes ▼</a>
+                        <ul class="dropdown-content">
+                            <li><a href="recipes/lasagna.html">Lasagna</a></li>
+                            <li><a href="recipes/pancakes.html">Pancakes</a></li>
+                            <li><a href="recipes/salad.html">Caesar Salad</a></li>
+                        </ul>
+                        </li>
+                        <li><a href="#about">About</a></li>
                     </ul>
-                    </li>
-                    <li><a href="#about">About</a></li>
-                </ul>
-            </nav>
+                </nav>
+            </div>
         </header>
         
         <main>
-            <h2>Welcome!</h2>
-            <p>Explore delicious recipes hand-picked to bring flavor and joy to your kitchen. Choose a recipe from the list below to get started!</p>
+            <section>
+                <h2>Welcome!</h2>
+                <p>Explore delicious recipes hand-picked to bring flavor and joy to your kitchen. Choose a recipe from the list below to get started!</p>
+            </section>
 
-            <ul>
-                <li><a href="recipes/lasagna.html">Lasagna</a></li>
-                <li><a href="recipes/pancakes.html">Pancakes</a></li>
-                <li><a href="recipes/salad.html">Caesar Salad</a></li>
-            </ul>
+            <section class="recipes">
+                <h2>Featured Recipes</h2>
+                <div class="recipe-grid">
+                    <div class="card">
+                    <img src="images/lasagna.jpg" alt="Lasagna">
+                    <h3>Lasagna</h3>
+                    <a href="recipes/lasagna.html" class="btn">View Recipe</a>
+                    </div>
+                    <div class="card">
+                    <img src="images/pancakes.jpg" alt="Pancakes">
+                    <h3>Pancakes</h3>
+                    <a href="recipes/pancakes.html" class="btn">View Recipe</a>
+                    </div>
+                    <div class="card">
+                    <img src="images/salad.jpg" alt="Caesar Salad">
+                    <h3>Caesar Salad</h3>
+                    <a href="recipes/salad.html" class="btn">View Recipe</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <h2>About Odin Recipes</h2>
+                <p>
+                    Odin Recipes is a beginner-friendly project inspired by The Odin Project curriculum.  
+                    It’s built with love, using only HTML and CSS, to help you practice web design fundamentals.
+                </p>
+            </section>
         </main>
 
         <footer>
