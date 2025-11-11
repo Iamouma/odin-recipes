@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pancakes Recipe</title>
-        <link rel="stylesheet" href="../style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Odin Recipes</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="dropdown">
-                    <a href="#">Recipes ▼</a>
-                    <ul class="dropdown-content">
-                        <li><a href="lasagna.html">Lasagna</a></li>
-                        <li><a href="pancakes.html">Pancakes</a></li>
-                        <li><a href="salad.html">Caesar Salad</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="../index.html#about">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="container">
-            <a href="../index.html">Home</a>
-            <h2>Pancakes</h2>
-            <img src="https://www.allrecipes.com/thmb/2m8bMNkYk07FNeSGuAdbWb4dOvI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/24530-good-old-fashioned-pancakes-mfs-480-c3cbd6dcf2ee493b816c15d1ed6c9f1c.jpg" alt="Pancakes" width="400">
-
-            <h3>Description</h3>
-            <p>Fluffy homemade pancakes that are perfect for breakfast or brunch. They’re quick, delicious, and can be served with syrup, fruits, or butter.</p>
-
-            <h3>Ingredients</h3>
-            <ul>
-                <li>1 cup flour</li>
-                <li>2 tbsp sugar</li>
-                <li>1 tbsp baking powder</li>
-                <li>1 egg</li>
-                <li>1 cup milk</li>
-                <li>2 tbsp melted butter</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pancakes Recipe | Odin Recipes</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <!-- ====== Header ====== -->
+  <header>
+    <div class="header-container">
+      <h1>🍴 Odin Recipes</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Recipes ▼</a>
+            <ul class="dropdown-content">
+              <li><a href="lasagna.html">Lasagna</a></li>
+              <li><a href="pancakes.html" class="active">Pancakes</a></li>
+              <li><a href="salad.html">Caesar Salad</a></li>
             </ul>
+          </li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <h3>Steps</h3>
-            <ol>
-                <li>Mix dry ingredients in one bowl and wet ingredients in another.</li>
-                <li>Combine both and stir until smooth.</li>
-                <li>Pour batter onto a greased pan and cook each side until golden.</li>
-            </ol>
-        </main>
+  <!-- ====== Main Recipe Content ====== -->
+  <main class="recipe-page">
+    <div class="back-link">
+      <a href="../index.html">← Back to Home</a>
+    </div>
 
-        <footer>
-            <p>&copy; 2025 Odin Recipes</p>
-        </footer>
-    </body>
+    <section class="recipe-details">
+      <h2>Fluffy Homemade Pancakes</h2>
+
+      <img
+        src="https://www.allrecipes.com/thmb/2m8bMNkYk07FNeSGuAdbWb4dOvI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/24530-good-old-fashioned-pancakes-mfs-480-c3cbd6dcf2ee493b816c15d1ed6c9f1c.jpg"
+        alt="Stack of fluffy pancakes with syrup and butter"
+      />
+
+      <h3>Description</h3>
+      <p>
+        These <strong>classic homemade pancakes</strong> are soft, fluffy, and golden brown — perfect for breakfast or brunch.  
+        Whether topped with syrup, butter, or fresh fruit, they’re sure to brighten your morning!
+      </p>
+      <p>
+        Made with simple ingredients and ready in minutes, this is the only pancake recipe you’ll ever need.
+      </p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 cup all-purpose flour</li>
+        <li>2 tablespoons sugar</li>
+        <li>1 tablespoon baking powder</li>
+        <li>1 large egg</li>
+        <li>1 cup milk</li>
+        <li>2 tablespoons melted butter</li>
+        <li>1 teaspoon vanilla extract (optional)</li>
+        <li>Pinch of salt</li>
+      </ul>
+
+      <h3>Steps</h3>
+      <ol>
+        <li>In a bowl, whisk together flour, sugar, baking powder, and salt.</li>
+        <li>In a separate bowl, beat the egg, then mix in milk, melted butter, and vanilla extract.</li>
+        <li>Combine the wet and dry ingredients, stirring gently until just combined (don’t overmix).</li>
+        <li>Heat a lightly greased pan over medium heat and pour ¼ cup of batter for each pancake.</li>
+        <li>Cook until bubbles form on the surface, then flip and cook until golden brown.</li>
+        <li>Serve warm with maple syrup, butter, or your favorite fruit toppings.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    <p>&copy; 2025 Odin Recipes | Crafted with ❤️ by Stephen Ouma</p>
+  </footer>
+</body>
 </html>

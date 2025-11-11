@@ -1,62 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lasagna Recipe</title>
-        <link rel="stylesheet" href="../style.css">
-    </head>
-    <body>
-      <header>
-        <h1>Odin Recipes</h1>
-        <nav>
-          <ul class="nav-links">
-            <li><a href="../index.html">Home</a></li>
-            <li class="dropdown">
-              <a href="#">Recipes ▼</a>
-              <ul class="dropdown-content">
-                <li><a href="lasagna.html">Lasagna</a></li>
-                <li><a href="pancakes.html">Pancakes</a></li>
-                <li><a href="salad.html">Caesar Salad</a></li>
-              </ul>
-            </li>
-            <li><a href="../index.html#about">About</a></li>
-          </ul>
-        </nav>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lasagna Recipe | Odin Recipes</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <!-- ====== Header ====== -->
+  <header>
+    <div class="header-container">
+      <h1>🍴 Odin Recipes</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Recipes ▼</a>
+            <ul class="dropdown-content">
+              <li><a href="lasagna.html" class="active">Lasagna</a></li>
+              <li><a href="pancakes.html">Pancakes</a></li>
+              <li><a href="salad.html">Caesar Salad</a></li>
+            </ul>
+          </li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-      <main class="container">
-        <a href="../index.html">Home</a>
-        <h2>Lasagna</h2>
+  <!-- ====== Main Recipe Content ====== -->
+  <main class="recipe-page">
+    <div class="back-link">
+      <a href="../index.html">← Back to Home</a>
+    </div>
 
-          <img src="https://www.allrecipes.com/thmb/5q5uKqJ-ffhGrXxtPiGlVqZLbxU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/23600-worlds-best-lasagna-DDMFS-4x3-3576e29a0f814d7fa595ffb9ac237bb3.jpg" alt="Lasagna dish" width="400">
+    <section class="recipe-details">
+      <h2>Classic Homemade Lasagna</h2>
 
-          <h3>Description</h3>
-          <p>This classic lasagna is a hearty Italian dish layered with rich meat sauce, creamy ricotta, and melted mozzarella. Perfect for family dinners or special occasions.</p>
-          <p>It’s easy to make, filling, and can be prepared ahead of time for convenience.</p>
+      <img
+        src="https://www.allrecipes.com/thmb/5q5uKqJ-ffhGrXxtPiGlVqZLbxU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/23600-worlds-best-lasagna-DDMFS-4x3-3576e29a0f814d7fa595ffb9ac237bb3.jpg"
+        alt="Delicious baked lasagna"
+      />
 
-          <h3>Ingredients</h3>
-          <ul>
-            <li>12 lasagna noodles</li>
-            <li>1 pound ground beef</li>
-            <li>2 cups ricotta cheese</li>
-            <li>2 cups shredded mozzarella</li>
-            <li>1 jar marinara sauce</li>
-            <li>Salt and pepper to taste</li>
-          </ul>
+      <h3>Description</h3>
+      <p>
+        This classic lasagna is a hearty Italian favorite made with layers of
+        pasta, rich meat sauce, creamy ricotta, and gooey mozzarella. Each bite
+        is a perfect blend of comfort and flavor — ideal for Sunday dinners or
+        family gatherings.
+      </p>
+      <p>
+        It’s simple to prepare, satisfying, and can even be made ahead of time
+        for busy weeknights. Serve with garlic bread and a fresh salad for the
+        ultimate meal.
+      </p>
 
-          <h3>Steps</h3>
-          <ol>
-            <li>Boil lasagna noodles until al dente and drain.</li>
-            <li>Cook ground beef in a skillet and mix with marinara sauce.</li>
-            <li>Layer noodles, ricotta, meat sauce, and mozzarella in a baking dish.</li>
-            <li>Repeat layers and finish with cheese on top.</li>
-            <li>Bake at 375°F (190°C) for 45 minutes until golden and bubbly.</li>
-          </ol>
-      </main>
+      <h3>Ingredients</h3>
+      <ul>
+        <li>12 lasagna noodles</li>
+        <li>1 lb (450g) ground beef</li>
+        <li>2 cups ricotta cheese</li>
+        <li>2 cups shredded mozzarella cheese</li>
+        <li>1 jar (24 oz) marinara sauce</li>
+        <li>1/2 cup grated Parmesan cheese</li>
+        <li>Salt and pepper to taste</li>
+        <li>Fresh basil leaves for garnish (optional)</li>
+      </ul>
 
-      <footer>
-        <p>&copy; 2025 Odin Recipes</p>
-      </footer>
-    </body>
+      <h3>Steps</h3>
+      <ol>
+        <li>Preheat your oven to 375°F (190°C).</li>
+        <li>Boil the lasagna noodles in salted water until al dente. Drain and set aside.</li>
+        <li>In a skillet, brown the ground beef, then stir in the marinara sauce. Simmer for 5 minutes.</li>
+        <li>In a baking dish, spread a thin layer of meat sauce. Layer noodles, ricotta, sauce, and mozzarella.</li>
+        <li>Repeat layers until ingredients are used, finishing with mozzarella and Parmesan on top.</li>
+        <li>Bake uncovered for 40–45 minutes or until golden and bubbling.</li>
+        <li>Let cool for 10 minutes, garnish with basil, and serve warm.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    <p>&copy; 2025 Odin Recipes | Crafted with ❤️ by Stephen Ouma</p>
+  </footer>
+</body>
 </html>

@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Caesar Salad Recipe</title>
-        <link rel="stylesheet" href="../style.css">
-    </head>
-    <body>
-        <header>
-            <h1>Odin Recipes</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="../index.html">Home</a></li>
-                    <li class="dropdown">
-                    <a href="#">Recipes ▼</a>
-                    <ul class="dropdown-content">
-                        <li><a href="lasagna.html">Lasagna</a></li>
-                        <li><a href="pancakes.html">Pancakes</a></li>
-                        <li><a href="salad.html">Caesar Salad</a></li>
-                    </ul>
-                    </li>
-                    <li><a href="../index.html#about">About</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main class="container">
-            <a href="../index.html">Home</a>
-            <h2>Caesar Salad</h2>
-            <img src="https://www.allrecipes.com/thmb/Zt-7Oci9X-p-c5w6IY1RWDR8sDQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/15177-classic-restaurant-caesar-salad-DDMFS-4x3-ec5c983e66a74b8593d4d0f327a8c8d7.jpg" alt="Caesar Salad" width="400">
-
-            <h3>Description</h3>
-            <p>A fresh Caesar salad made with crisp romaine lettuce, creamy dressing, crunchy croutons, and Parmesan cheese.</p>
-
-            <h3>Ingredients</h3>
-            <ul>
-                <li>Romaine lettuce</li>
-                <li>Caesar dressing</li>
-                <li>Croutons</li>
-                <li>Parmesan cheese</li>
-                <li>Black pepper</li>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Caesar Salad Recipe | Odin Recipes</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <!-- ====== Header ====== -->
+  <header>
+    <div class="header-container">
+      <h1>🍴 Odin Recipes</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="#">Recipes ▼</a>
+            <ul class="dropdown-content">
+              <li><a href="lasagna.html">Lasagna</a></li>
+              <li><a href="pancakes.html">Pancakes</a></li>
+              <li><a href="salad.html" class="active">Caesar Salad</a></li>
             </ul>
+          </li>
+          <li><a href="../index.html#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-            <h3>Steps</h3>
-            <ol>
-                <li>Chop lettuce and place in a large bowl.</li>
-                <li>Add croutons and grated Parmesan cheese.</li>
-                <li>Drizzle with Caesar dressing and toss gently.</li>
-                <li>Top with extra cheese and serve immediately.</li>
-            </ol>
-        </main>
+  <!-- ====== Main Recipe Content ====== -->
+  <main class="recipe-page">
+    <div class="back-link">
+      <a href="../index.html">← Back to Home</a>
+    </div>
 
-        <footer>
-            <p>&copy; 2025 Odin Recipes</p>
-        </footer>
-    </body>
+    <section class="recipe-details">
+      <h2>Classic Caesar Salad</h2>
+
+      <img
+        src="https://www.allrecipes.com/thmb/Zt-7Oci9X-p-c5w6IY1RWDR8sDQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/15177-classic-restaurant-caesar-salad-DDMFS-4x3-ec5c983e66a74b8593d4d0f327a8c8d7.jpg"
+        alt="Fresh Caesar Salad"
+      />
+
+      <h3>Description</h3>
+      <p>
+        A refreshing and crunchy <strong>Caesar Salad</strong> featuring crisp romaine lettuce, creamy homemade dressing, 
+        golden croutons, and a generous sprinkle of Parmesan cheese.
+      </p>
+      <p>
+        This timeless salad pairs perfectly with grilled chicken or pasta and makes a healthy, delicious meal any time of the day.
+      </p>
+
+      <h3>Ingredients</h3>
+      <ul>
+        <li>1 large head romaine lettuce, chopped</li>
+        <li>½ cup Caesar dressing</li>
+        <li>1 cup croutons</li>
+        <li>½ cup grated Parmesan cheese</li>
+        <li>Freshly ground black pepper to taste</li>
+        <li>Optional: grilled chicken or bacon bits</li>
+      </ul>
+
+      <h3>Steps</h3>
+      <ol>
+        <li>Wash and chop the romaine lettuce, then pat dry.</li>
+        <li>In a large bowl, toss the lettuce with Caesar dressing until evenly coated.</li>
+        <li>Add croutons and grated Parmesan cheese; mix gently.</li>
+        <li>Top with extra cheese, a dash of black pepper, and serve immediately.</li>
+      </ol>
+    </section>
+  </main>
+
+  <!-- ====== Footer ====== -->
+  <footer>
+    <p>&copy; 2025 Odin Recipes | Crafted with ❤️ by Stephen Ouma</p>
+  </footer>
+</body>
 </html>
